@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+{{- range first 1 (where .Data.Pages "Section" "post") }}
+ <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+ <h6> {{ .Date.Format "Mon, Jan2, 2006" }}</h6>
+ {{ .Content }}
+ Tags for this post: 
+  {{ range .Params.tags }}
+   <a href="{{. | urlize }}">{{ . }}</a>
+  {{ end }}
+ <p>
+ <a href="{{ .PrevInSection.Permalink }}">Prev</a>     
+{{- end }}
+{{ partial "footer.html" . }}

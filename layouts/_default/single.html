@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+ <h2>{{ .Title }}</h2>
+ <h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+ {{ .Content }}
+ <p>
+  Tags for this post:
+  {{- range .Params.tags -}}
+   <a href="{{. | urlize }}">{{ . }}</a> 
+  {{ end }}
+ <p>
+  {{if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">Previous</a>{{ end}}{{ if .NextInSection }}
+ | <a href="{{ .NextInSection.Permalink }}">Next</a>{{ end }}
+{{ partial "footer.html" . }}

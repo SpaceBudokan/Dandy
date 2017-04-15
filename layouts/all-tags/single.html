@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<ul>
+ {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  <li>
+  <a href="{{ $name | urlize }}">{{ $name }}</a>
+  </li>
+ {{ end }}
+</ul>
+{{ partial "footer.html" . }}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ if .IsHome }}
+   <title>Space Budokan</title>
+  {{ else }}
+   <title>Space Budokan - {{ .Title }}</title>
+  {{ end }}
+ </head>
+ <body>
+  <h1 style="text-align: center">{{ .Site.Title }}</h1>
+  <hr>
+  <h2 style="text-align: center">{{ .Site.Params.tagline }}</h2>
+  <p>
+   <div align="center">
+    <a href="{{ .Site.BaseURL }}">Home</a> | 
+<a href="{{ .Site.BaseURL }}tags/">Tags</a> | 
+<a href="{{ .Site.BaseURL }}post/">Archive</a> | 
+<a href="{{ .Site.BaseURL }}about/">About</a> | 
+<a href="{{ .Site.BaseURL }}licenses/">Licenses</a> | 
+<a href="{{ .Site.RSSLink }}">Site RSS</a>
+   </div>
+  <hr>
+

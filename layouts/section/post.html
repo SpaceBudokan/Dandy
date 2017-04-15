@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<h2>Archive Of All Posts</h2>
+<ul>
+ {{ range (.Paginator 25).Pages }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+ {{ end }}
+</ul>
+ {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev }}">Prev</a> | {{ end }}
+ {{if .Paginator.HasNext }}<a href="{{ .Paginator.Next }}">Next</a> {{ end }}
+{{ partial "footer.html" . }}
