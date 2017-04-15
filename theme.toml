@@ -3,7 +3,7 @@
 
 name = "Dandy"
 license = "GPLv3"
-licenselink = "https://github.com/SpaceBudokan/Dandy/blob/master/LICENSE.md"
+licenselink = "https://github.com/SpaceBudokan/Dandy/blob/master/LICENSE"
 description = "A very minimalist blog theme for Hugo"
 homepage = "https://spacebudokan.com/"
 tags = ["hugo", "blog" , "minimalist"]
