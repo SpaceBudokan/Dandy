@@ -1,0 +1,10 @@
+theme = "dandy"
+baseurl = "https://mysite"
+languageCode = "en-us"
+title = "Site Title"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  tagline = "Clever Tagline"
