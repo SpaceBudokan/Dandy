@@ -10,17 +10,16 @@
   {{ end }}
  </head>
  <body>
-  <h1 style="text-align: center">{{ .Site.Title }}</h1>
-  <hr>
-  <h2 style="text-align: center">{{ .Site.Params.tagline }}</h2>
-  <p>
-   <div align="center">
-    <a href="{{ .Site.BaseURL }}">Home</a> | 
-<a href="{{ .Site.BaseURL }}tags/">Tags</a> | 
-<a href="{{ .Site.BaseURL }}post/">Archive</a> | 
-<a href="{{ .Site.BaseURL }}about/">About</a> | 
-<a href="{{ .Site.BaseURL }}licenses/">Licenses</a> | 
+  <div align="center">
+   <h1>{{ .Site.Title }}</h1>
+   <hr>
+   <h2>{{ .Site.Params.tagline }}</h2>
+   <p>
+   <a href="{{ .Site.BaseURL }}">Home</a> | 
+<a href="{{ .Site.BaseURL }}/tags/">Tags</a> | 
+<a href="{{ .Site.BaseURL }}/post/">Archive</a> | 
+<a href="{{ .Site.BaseURL }}/about/">About</a> | 
+<a href="{{ .Site.BaseURL }}/licenses/">Licenses</a> | 
 <a href="{{ .Site.RSSLink }}">Site RSS</a>
-   </div>
+  </div>
   <hr>
-
